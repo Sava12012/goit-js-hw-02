@@ -7,12 +7,6 @@
 //   return "You are a minor";
 // }
 
-// checkAge(45);
-// checkAge(10);
-// checkAge(12);
-// checkAge(51);
-
-
 // =========== Work 2
 
 // function checkPassword(password) {
@@ -20,7 +14,6 @@
 //     if (password === ADMIN_PASSWORD) {
 //         return "Welcome!";
 //     }
-    
 //     return "Access denied, wrong password!"
 //     console.log(checkPassword);
 // }
@@ -28,9 +21,6 @@
 // =========== Work 3
 
 // function checkStorage(available, ordered) {
-//   // Change code below this line
-  
-
 //   if (ordered === 0) {
 //     return "Your order is empty!";
 //   } if (ordered > available) {
@@ -60,8 +50,15 @@
 
 // =========== Work 6
 
-const fruits = ["apple", "plum", "pear", "orange"];
-fruits[1] = "peach";
-fruits[3] = "banana";
+// const fruits = ["apple", "plum", "pear", "orange"];
+// fruits[1] = "peach";
+// fruits[3] = "banana";
 
-console.log(fruits);
+// console.log(fruits);
+
+// =========== Work 7
+
+const fruits = ["apple", "peach", "pear", "banana"];
+const fruitsArrayLength = fruits.length;
+
+console.log(fruits.length)
