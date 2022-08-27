@@ -65,9 +65,20 @@
 
 // =========== Work 8
 
-const fruits = ["apple", "peach", "pear", "banana"];
-const lastElementIndex = fruits.length - 1;
-const lastElevtnt = fruits[lastElementIndex];
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const lastElementIndex = fruits.length - 1;
+// const lastElevtnt = fruits[lastElementIndex];
 
-console.log(fruits);
-console.log(fruits[lastElementIndex]);
+// console.log(fruits);
+// console.log(fruits[lastElementIndex]);
+
+// =========== Work 9
+
+// function getExtremeElements(array) {
+
+// return [array[0], array[array.length-1]];
+
+// }
+
+// =========== Work 10
+
