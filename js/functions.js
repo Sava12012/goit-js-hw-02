@@ -58,7 +58,16 @@
 
 // =========== Work 7
 
-const fruits = ["apple", "peach", "pear", "banana"];
-const fruitsArrayLength = fruits.length;
+// const fruits = ["apple", "peach", "pear", "banana"];
+// const fruitsArrayLength = fruits.length;
 
-console.log(fruits.length)
+// console.log(fruits.length)
+
+// =========== Work 8
+
+const fruits = ["apple", "peach", "pear", "banana"];
+const lastElementIndex = fruits.length - 1;
+const lastElevtnt = fruits[lastElementIndex];
+
+console.log(fruits);
+console.log(fruits[lastElementIndex]);
