@@ -47,13 +47,21 @@
 
 // =========== Work 5
 
+// const fruits = ["apple", "plum", "pear", "orange"];
+
+// const firstElement = fruits[0];
+// const secondElement = fruits[1];
+// const lastElement = fruits[3];
+
+
+// console.log(firstElement);
+// console.log(secondElement);
+// console.log(lastElement);
+
+// =========== Work 6
+
 const fruits = ["apple", "plum", "pear", "orange"];
+fruits[1] = "peach";
+fruits[3] = "banana";
 
-const firstElement = fruits[0];
-const secondElement = fruits[1];
-const lastElement = fruits[3];
-
-
-console.log(firstElement);
-console.log(secondElement);
-console.log(lastElement);
+console.log(fruits);
