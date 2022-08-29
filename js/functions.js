@@ -82,3 +82,12 @@
 
 // =========== Work 10
 
+// function calculateEngravingPrice(message, pricePerWord) {
+//   const words = message.split(" ");
+//   let total = words.length;
+//   return total * pricePerWord;
+// }
+
+// calculateEngravingPrice("JavaScript is in my blood", 10);
+
+// =========== Work 11
