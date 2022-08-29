@@ -92,10 +92,27 @@
 
 // =========== Work 11
 
-function makeStringFromArray(array, delimeter) {
-  let string;
-  string = array.join(delimeter);
-  return string;
-}
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   string = array.join(delimeter);
+//   return string;
+// }
 
 // =========== Work 12
+
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+
+//   string = array.join(delimeter);
+
+//   return string;
+// }
+
+// =========== Work 13
+
+function slugify(title) {
+
+  const slug = title.toLowerCase().split(" ").join('-');
+  return slug;
+
+}
