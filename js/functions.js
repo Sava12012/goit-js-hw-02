@@ -91,3 +91,11 @@
 // calculateEngravingPrice("JavaScript is in my blood", 10);
 
 // =========== Work 11
+
+function makeStringFromArray(array, delimeter) {
+  let string;
+  string = array.join(delimeter);
+  return string;
+}
+
+// =========== Work 12
