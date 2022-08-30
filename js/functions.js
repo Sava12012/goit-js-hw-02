@@ -194,15 +194,27 @@
 
 //  =========== Work 22
 
-function createArrayOfNumbers(min, max) {
-  const numbers = [];
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
 
-  for (let i = min; i <= max; i+= 1) {
-    numbers.push(i);
-    
-  }
-  
-  return numbers;
-}
+//   for (let i = min; i <= max; i+= 1) {
+//     numbers.push(i);
+//   }
+//   return numbers;
+// }
 
+//  =========== Work 23
+
+// function filterArray(numbers, value) {
+//   let newArr = []
+//   for (let number of numbers) {
+//     if (number > value) {
+//       newArr.push(number)
+//     }
+//   }
+//   return newArr
+
+// }
+
+//  =========== Work 24
 
