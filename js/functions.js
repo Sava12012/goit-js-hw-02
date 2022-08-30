@@ -180,3 +180,17 @@
 // }
 
  // =========== Work 21
+
+//  function findLongestWord(string) {
+ 
+//   let stringSplit = string.split(' ');
+//   let longesWord = ("");
+//   for (let i = 0; i < stringSplit.length; i+= 1) {
+//     if (stringSplit[i].length > longesWord.length) {
+//       longesWord = stringSplit[i]; 
+//     }
+//   }
+//   return longesWord;
+// }
+
+ // =========== Work 22
