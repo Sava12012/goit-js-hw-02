@@ -165,21 +165,20 @@
 //   console.log(fruit);
 // }
 
-// // =========== Work 20
+// =========== Work 20
 
 // function calculateTotalPrice(order) {
 //   let total = 0;
-//   // Change code below this line
+
 //   for (let i = 0; i < order.length; i += 1 ) {
 //     total = total + order[i];
     
 //   }
 
-//   // Change code above this line
 //   return total;
 // }
 
- // =========== Work 21
+//  =========== Work 21
 
 //  function findLongestWord(string) {
  
@@ -193,4 +192,17 @@
 //   return longesWord;
 // }
 
- // =========== Work 22
+//  =========== Work 22
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+
+  for (let i = min; i <= max; i+= 1) {
+    numbers.push(i);
+    
+  }
+  
+  return numbers;
+}
+
+
