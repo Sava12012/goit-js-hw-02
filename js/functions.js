@@ -135,3 +135,35 @@
 // console.log(allClients);
 
 // // =========== Work 16
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = start; i <=end ; i += 1) { // Change this line
+//   console.log(i);
+// }
+
+// // =========== Work 18
+
+// function calculateTotal(number) {
+//   let total = 0;
+//   for (let i = 0; i <= number; i += 1){
+//     total += i
+//   }
+//     return total;
+// }
+
+// console.log(calculateTotal(10))
+
+
+// // =========== Work 19
+
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i+= 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// // =========== Work 20
+
