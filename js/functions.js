@@ -258,3 +258,27 @@
 // return false
 // }
 
+
+//  ================================ Модуль 3 Обєкти
+
+//  =========== Work 11
+
+const keys = [];
+const values = [];
+const advert = {
+  service: "apt",
+};
+const apartment = Object.create(advert);
+apartment.descr = "Spacious apartment in the city center";
+apartment.rating = 4;
+apartment.price = 2153;
+
+for (const key in apartment) {
+  // Change code below this line
+
+  keys.push(key);
+  values.push(apartment[key]);
+
+  // Change code above this line
+}
+
