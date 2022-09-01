@@ -234,4 +234,27 @@
 //   return fruits.includes(fruit); // Change this line
 // }
 
-//  =========== Work 25
+//  =========== Work 26
+
+// function calculateTotalPrice(order) {
+//   let total = 0; 
+//   // Change code below this line
+
+//   for (let i of order) {
+//     total+= i;
+//   }
+//   return total;
+// }
+
+//  =========== Work 32
+
+// function includes(array, value) {
+//   // Change code below this line
+//   for (let item of array) {
+//     if (item === value) {
+//       return true
+//     }
+//   }
+// return false
+// }
+
