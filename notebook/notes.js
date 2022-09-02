@@ -1,4 +1,4 @@
-//                         Модуль 2 - Масиви Функції []
+//===============================Модуль 2 - Масиви Функції []
 // =========== Перевірка на масив: 
 // let friends = ['vova', 'bob', 'anna', 'dima', 'nata']
 // console.log(friends)
@@ -83,6 +83,37 @@
 
 
 
+
                                 // Модуль 3 - Обєкти {}
 
-// =========== 
+// =========== Перебираєм Обєкти 
+
+// const feedback = {
+//     good: 5,
+//     neutral: 10,
+//     bad: 3,
+// };
+
+// Краще не використовувати for in бо він перебирирає не тільки свої свойстав обєкта а і унаслідовані.
+// Не використовуєм for in, а замість того for Of
+// Для цього користуємось конструктором object який має метод:
+
+// // Object.keys(feedback);  - повертає масив ключів
+// // Object.values(feedback); - повертає масив значень
+
+// const keys = Object.keys(feedback);
+// console.log(keys);
+
+// // В подальшоу перебираємо через for of
+
+    
+//     for (const key of kays) {
+//         console.log(key);
+//         console.log(feedback[key]);
+
+//         totalFeedback += feedback[key];
+//     }
+
+// console.log("totalFeedback:", totalFeedback);
+
+
