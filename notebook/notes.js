@@ -86,6 +86,28 @@
 
                                 // Модуль 3 - Обєкти {}
 
+// = { } - літерал обєкта
+
+
+// ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+
+// const { yesterday, today, tomorrow } = highTemperatures;
+
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// console.log(yesterday);
+// console.log(today);
+// console.log(tomorrow);
+// console.log(meanTemperature);
+
+
+
 // =========== Перебираєм Обєкти 
 
 // const feedback = {
@@ -115,6 +137,14 @@
 //     }
 
 // console.log("totalFeedback:", totalFeedback);
+
+
+
+
+
+
+
+
 
 
 // ==============================================...rest - оператор

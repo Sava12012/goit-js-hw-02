@@ -343,3 +343,43 @@
 //   return prodValue;
 
 // }
+
+
+//  =========== Work 20
+
+// const products = [
+//   { name: "Radar", price: 1300, quantity: 4 },
+//   { name: "Scanner", price: 2700, quantity: 3 },
+//   { name: "Droid", price: 400, quantity: 7 },
+//   { name: "Grip", price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   let total = 0;
+//   for (const product of products) {
+//     if (productName === product.name) {
+//     total = (product.price * product.quantity);
+//     }
+//   }
+//   return total;
+//   }
+  
+
+// console.log(calculateTotalPrice("Radar"));
+// console.log(calculateTotalPrice("Droid"));
+// console.log(calculateTotalPrice("Blaster"));
+
+
+//  =========== Work 23
+
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+//   const{yesterday:highYesterday,today:highToday,tomorrow:highTomorrow,icon: highIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg"} = highTemperatures;
+
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+
+//  =========== Work 24
