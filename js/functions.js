@@ -238,7 +238,7 @@
 
 // function calculateTotalPrice(order) {
 //   let total = 0; 
-//   // Change code below this line
+//   
 
 //   for (let i of order) {
 //     total+= i;
@@ -249,7 +249,7 @@
 //  =========== Work 32
 
 // function includes(array, value) {
-//   // Change code below this line
+//   
 //   for (let item of array) {
 //     if (item === value) {
 //       return true
@@ -274,7 +274,7 @@
 // apartment.price = 2153;
 
 // for (const key in apartment) {
-//   // Change code below this line
+//   
 
 //   keys.push(key);
 //   values.push(apartment[key]);
@@ -293,7 +293,7 @@
 
 // const hexColors = [];
 // const rgbColors = [];
-// // Change code below this line
+// 
 
 // for (let color of colors) {
 //   hexColors.push(color.hex);
@@ -399,13 +399,12 @@
 
 // const {today: {low: lowToday, high: highToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg"}, tomorrow: {low: lowTomorrow, high: highTomorrow, icon: tomorrowIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg'}} = forecast;
 
-
 //  =========== Work 28
 
 // const firstGroupScores = [64, 42, 93];
 // const secondGroupScores = [89, 14, 51, 26];
 // const thirdGroupScores = [29, 47, 18, 97, 81];
-// // Change code below this line
+// 
 // const allScores = [...firstGroupScores, ...secondGroupScores, ...thirdGroupScores];
 // const bestScore = Math.max(...allScores);
 // const worstScore = Math.min(...allScores);
@@ -413,3 +412,59 @@
 // console.log(allScores);
 // console.log(bestScore);
 // console.log(worstScore);
+
+//  =========== Work 39
+
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+// const potionIndex = this.potion.indexOf(potionName);
+// this.potions.splice(potionIndex, 1);
+
+//   },
+// };
+
+// atTheOldToad.removePotion("Speed potion");
+
+//  =========== Work 41
+
+
+// const atTheOldToad = {
+//   potions: [
+//     { name: "Speed potion", price: 460 },
+//     { name: "Dragon breath", price: 780 },
+//     { name: "Stone skin", price: 520 },
+//   ],
+//   getPotions() {
+//     return this.potions;
+//   },
+//   addPotion(newPotion) {
+//     if (this.potions.includes(newPotion)) {
+//       return `Error! Potion ${newPotion} is already in your inventory!`;
+//     }
+
+//     this.potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     const potionIndex = this.potions.indexOf(potionName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${potionName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1);
+//   },
+//   updatePotionName(oldName, newName) {
+//     const potionIndex = this.potions.indexOf(oldName);
+
+//     if (potionIndex === -1) {
+//       return `Potion ${oldName} is not in inventory!`;
+//     }
+
+//     this.potions.splice(potionIndex, 1, newName);
+//   },
+// };
+// ;
+// console.log(atTheOldToad.getPotions());
+// atTheOldToad.addPotio;
