@@ -468,3 +468,26 @@
 // ;
 // console.log(atTheOldToad.getPotions());
 // atTheOldToad.addPotio;
+
+// ==================== Тренування розпилювання масиву ===========================
+// const a = { x: 1, y: 2 };
+// const b = { x: 0, z: 3 };
+
+// const c = {
+//     ...a,
+//     x: 10,
+//     ...b,
+//     y: 20,
+//     name: "Mango",
+// }
+
+// console.log(c);
+
+// const a = { x: 100, y: 200, z: 500 };
+// const b = { x: 300, y: 100, z: 600 };
+
+// const c = {...b, x: 4000, ...a, x: 3000,};
+
+// console.log(c);
+
+
