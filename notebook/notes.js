@@ -105,7 +105,6 @@
 
 // = { } - літерал обєкта
 
-
 // ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ
 
 // const highTemperatures = {
@@ -157,10 +156,214 @@
 
 // =====================================...rest - оператор
 
-
 // rest: збирання всіх аргументів функції
 // Операція ... (rest) дозволяє зібрати групу незалежних елементів у нову колекцію.
 // Синтаксично - це близнюк операції розподілу, але відрізнити їх просто - розподіл - коли ... знаходиться у правій частині 
 // операції присвоювання, а збирання - коли ... знаходиться в її лівій частині.
 
-// =====================================...rest - оператор
+// ===================================== Callback 
+
+// Функції не відрізняються від чисел, рядків або масивів - це просто спеціальний тип даних
+// (об'єкт вищого порядку), значення, яке можна зберігати у змінній або передавати 
+// у якості аргументу в іншу функцію.
+
+// // Колбек-функція
+// function greet(name) {
+//   console.log(`Ласкаво просимо ${name}.`);
+// }
+
+// // Функція вищого порядку
+// function registerGuest(name, callback) {
+//   console.log(`Реєструємо гостя ${name}.`);
+//   callback(name);
+// }
+// registerGuest("Манго", greet);
+
+// Інлайн колбеки
+
+// Якщо колбек - функція - маленька, і потрібна тільки для передачі аргументом, її можна 
+// оголосити безпосередньо на момент виклику функції, в яку передаємо колбек.Така функція 
+// буде доступна тільки у якості значення параметра і більше ніде в коді.
+
+function registerGuest(name, callback) {
+  console.log(`Реєструємо гостя ${name}.`);
+  callback(name);
+}
+
+// Передаємо інлайн функцію greet у якості колбека
+registerGuest("Манго", function greet(name) {
+  console.log(`Ласкаво просимо ${name}.`);
+});
+
+// Передаємо інлайн функцію notify у якості колбека
+registerGuest("Полі", function notify(name) {
+  console.log(`Шановний(а) ${name}, ваш номер буде готовий за 30 хвилин.`);
+});
+
+
+
+
+                                // Модуль 4 - Перебираючі методи масиву
+
+
+// HOF - Hight order function (функции высшего порядка)
+// функция высшего порядка может принимать как параметр другую ф-цию и(или) возвращать другую функцию
+
+// =======================    [].forEach() - нічого не вертає, тільки пербирає
+
+// let friends = [
+//     { id: 1, name: "Vova", age: 20, budget: 2400, isComplete: true },
+//     { id: 2, name: "Sara", age: 25, budget: 3500, isComplete: false },
+//     { id: 3, name: "Mike", age: 30, budget: 300, isComplete: true },
+//     { id: 4, name: "Bob", age: 18, budget: 200, isComplete: false },
+// ];
+
+// friends.forEach(function (elem) {
+//     console.log(elem.id, elem.name);
+// });
+
+
+// friends.forEach(function (friend) {
+//     console.log(friend.id, friend.name);
+// });
+//====
+// Best practice
+
+// friends.forEach(({ id, name }) => {
+//     console.log(id, name);
+// });
+
+// friends.forEach((item) => {
+//     const { id, name } = item;
+//     console.log(id, name);
+// });
+
+
+// =======================   [].map() - returns new arr (масив)
+
+
+// [].map((elem, idx, arr)=>{})
+
+// let numbers = [10, 20, 30, 40, 50];
+// console.log(numbers);
+
+// const newArr = numbers.map((num, idx, arr) => {
+//     return num * 10;
+// });
+// console.log(newArr);
+// console.log(newArr === numbers);
+
+// копія масиву через Map - юзаєм спред оператор ...
+
+// let numbers = [10, 20, 30, 40, 50];
+// const newArr = numbers.map((num) => {
+//     return num;
+// });
+// console.log(newArr);
+
+// юзаєм шорт хет синтаксис - короткий ретурн
+
+// let numbers = [10, 20, 30, 40, 50];
+// const newArr = numbers.map((num) => num);
+// console.log(newArr);
+
+// ===== масиви через map
+
+// let friends = [
+//     { id: 1, name: "Vova", age: 20, budget: 2400, isComplete: true },
+//     { id: 2, name: "Sara", age: 25, budget: 3500, isComplete: false },
+//     { id: 3, name: "Mike", age: 30, budget: 300, isComplete: true },
+//     { id: 4, name: "Bob", age: 18, budget: 200, isComplete: false },
+// ];
+
+// const friendBudget = friends.map((friend) => {
+//     return friend.budget;
+// });
+// console.log(friendBudget);
+
+// Диструктуризуємо наш код на стрелочну функцію та коротким ретурном
+
+// const friendBudget = friends.map(({budget}) => budget);
+// console.log(friendBudget);
+
+// Додаємо всім друзям премію
+
+// const bonus = friends.map((friend) => {
+//     return friend.budget + friend.budget * 0.1;
+// });
+// console.log(bonus);
+
+// Додаємо премію тільки однову другу
+
+// const bonusForUser = "Sara";
+// const friendsArr = friends.map((friend) => {
+//     if (bonusForUser === friend.name) {
+//         return {
+//             ...friend,
+//             budget: friend.budget + 500,
+//         }
+//     }
+//     return friend;
+// });
+// console.log(friendsArr);
+
+// =======================   [].filter()
+
+// Фільтрує по умові, якщо нічого не знаходить то вертає пустий масив
+
+// let friends = [
+//     { id: 1, name: "Vova", age: 20, budget: 2400, isComplete: true },
+//     { id: 2, name: "Sara", age: 25, budget: 3500, isComplete: false },
+//     { id: 3, name: "Mike", age: 30, budget: 300, isComplete: true },
+//     { id: 4, name: "Bob", age: 18, budget: 200, isComplete: false },
+// ];
+
+// фільтруєм тих у кого isComplete - true
+
+// const done = friends.filter((friend) => {
+//     return friend.isComplete
+// });
+// console.log(done);
+
+// У кого зарплата вище 1000
+
+// const users = friends.filter((friend) => {
+//     return friend.budget < 1000;
+// });
+// console.log(users);
+
+// Всі крім Sara
+
+// const userToFind = "Sara"
+// const users = friends.filter((friend) => {
+//     return friend.name !== userToFind;
+// })
+// console.log(users);
+
+// Тільки Sara
+
+// const userToFind = "Sara";
+// const users = friends.filter((friend) => {
+//     return friend.name === userToFind;
+// });
+// console.log(users);
+
+// =======================   [].find()
+
+// Знаходить тільки один елемент, якщо 2 однакові назви то виводить першу яку знайшов
+// Если не находит, то возвращает undefined
+
+// let friends = [
+//     { id: 1, name: "Vova", age: 20, budget: 2400, isComplete: true },
+//     { id: 2, name: "Sara", age: 18, budget: 3500, isComplete: false },
+//     { id: 3, name: "Mike", age: 30, budget: 300, isComplete: true },
+//     { id: 4, name: "Bob", age: 18, budget: 200, isComplete: false },
+//     { id: 4, name: "Sara", age: 25, budget: 2000, isComplete: false },
+// ];
+
+// const nameToFind = "Sara";
+// const user = friends.find((friend) => {
+//     return friend.name === nameToFind;
+// });
+
+// console.log(user);
